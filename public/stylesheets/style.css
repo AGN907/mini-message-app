@@ -1,0 +1,62 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px auto;
+}
+.board{
+  text-align: center;
+  width: 750px;
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+  gap: 16px;
+  height: 520px;
+  overflow-y: scroll;
+}
+
+.message-box  {
+  position: relative;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 16px;
+}
+
+.user-name {
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  background-color: teal;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  
+}
+.user-message {
+  text-wrap: pretty;
+  font-size: 1.2rem;
+}
+.user-date {
+  font-size: .9rem;
+  flex: 0 0 auto;
+  font-weight: 600;
+}
+
+

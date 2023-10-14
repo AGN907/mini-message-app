@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  form(method='POST' action='/new' style='display:flex; flex-direction:column; width:400px;') 
+    input(placeholder='Your Name' name='user')
+    textarea(name='text' placeholder='Your message')
+    button(type='submit') Submit
+

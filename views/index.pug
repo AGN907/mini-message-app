@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div(class='header')
+    h1= title
+    a(href='/new') Add Message
+  div(class='board')
+    each val in messages
+      div(class='message-box')
+        p(class='user-name')= val.user
+        p(class="user-message")= val.text
+        p(class='user-date')= val.added.toLocaleString()
